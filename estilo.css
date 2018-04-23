@@ -1,0 +1,107 @@
+body{
+  font-family: 'Overlock', cursive;
+}
+
+img{
+  width: 100%;
+}
+
+
+/***Estos son los contenedores del sitio***/
+    .container{
+      max-width: 1100px;
+      margin: 2em auto;
+    }
+
+    .row{
+      clear: both;
+      margin: 1em 0;
+    }
+    .col-1{
+      float: left;
+      width: 33%;
+      padding: 3%;
+      box-sizing: border-box;
+      background-color: #eee;
+    }
+
+    .desaparezco{
+      background-color: skyblue;
+    }
+
+
+/***Aquí va la navegación de la página****/
+    nav{
+      float: right;
+    }
+    nav ul{
+      float: right;
+    }
+    nav ul li{
+      display: inline;
+      padding: 0.2em;
+      text-align: right;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      font-weight: 600;
+      color: #333;
+    }
+
+    nav ul li a:hover{
+      opacity: 0.9;
+      color: skyblue;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+
+
+/**Responsivo: que tome una distribución diferente para celular que para desktop**/
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .col-1{
+    width: 100%;
+  }
+}/*noten que cierra aquí la restricción de tamaño de pantalla*/
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .col-1{
+    width: 50%;
+  }
+  .desaparezco{
+    display: none;
+  }
+}/*noten que cierra aquí la restricción de tamaño de pantalla*/
+
+
+/**Animación **/
+
+  .muevete {
+      width: 100px;
+      padding: 2em;
+      background: red;
+      position: relative;
+      z-index: -1;
+      -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+      animation: mymove 5s infinite;
+      transform: translate(0,100px) rotate(90deg);
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes mymove {
+      0%   {top: 100px; left: 10px; background: blue;}
+      50%  {top: -100px; left: 10px; background: skyblue;}
+      100% {top: 100px; left: 10px; background: blue; }
+  }
+
+  /* Standard syntax */
+  @keyframes mymove {
+      0%   {top: 100px; left: 10px; background: blue;}
+      50%  {top: -100px; left: 10px; background: skyblue;}
+      100% {top: 100px; left: 10px; background: blue;}
+  }
