@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alineando imágenes</title>
+    <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
+    <style media="screen">
+      .container{
+        background-color: #eee;
+        width: 50%; /*es el ancho del contenedor, en relación al viewport*/
+        margin: 10vh auto;  /*noten como con vh ajusto al 20% del ancho "visible" en el navegador*/
+        padding: 2em;
+        font-family: 'Overlock', cursive;
+        color: #333;
+        text-align: center;
+      }
+      .una-imagen{
+        text-align: center;
+      }
+      img{
+        max-width: 50%; /*noten que la imagen se ajusta al 50% del contenedor gris, no al de la página*/
+      }
+      span{
+        font-weight: bold;
+        color: blue;
+      }
+      p{
+        margin: 2em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="una-imagen">
+        <h2>Centrando imágenes con text-align</h2>
+        <img src="under-the-iron-sea.jpg" alt="disco-keane"/>
+      </div>
+      <p>
+        Contenedor centrado, pero con margin: 10vh <span>
+        auto</span>
+      </p>
+    </div>
+
+  </body>
+</html>
