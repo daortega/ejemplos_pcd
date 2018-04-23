@@ -82,26 +82,27 @@ img{
 /**Animación **/
 
   .muevete {
-      width: 100px;
+      width: 120px;
       padding: 2em;
-      background: red;
       position: relative;
+      font-weight: bold;
+      text-transform: uppercase;
       z-index: -1;
-      -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-      animation: mymove 5s infinite;
+      -webkit-animation: mymove 7s infinite; /* Safari 4.0 - 8.0 */
+      animation: mymove 7s infinite;
       transform: translate(0,100px) rotate(90deg);
   }
 
   /* Safari 4.0 - 8.0 */
   @-webkit-keyframes mymove {
-      0%   {top: 100px; left: 10px; background: blue;}
-      50%  {top: -100px; left: 10px; background: skyblue;}
-      100% {top: 100px; left: 10px; background: blue; }
+      0%   {top: 80px; left: 10px; background: blue;}
+      50%  {top: -120px; left: 10px; background: skyblue;}
+      100% {top: 80px; left: 10px; background: blue; }
   }
 
   /* Standard syntax */
   @keyframes mymove {
-      0%   {top: 100px; left: 10px; background: blue;}
-      50%  {top: -100px; left: 10px; background: skyblue;}
-      100% {top: 100px; left: 10px; background: blue;}
+      0%   {top: 80px; left: 10px; background: blue;}
+      50%  {top: -120px; left: 10px; background: skyblue;}
+      100% {top: 80px; left: 10px; background: blue;}
   }
